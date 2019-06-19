@@ -9,7 +9,7 @@ $row=mysqli_fetch_assoc($result);
 
 if(isset($_POST['save'])){
   $name=htmlspecialchars($_POST['name']);
-  $pass=htmlspecialchars(md5($_POST['password']));
+  $pass=htmlspecialchars(sha1($_POST['password']));
   $address=htmlspecialchars($_POST['address']);
   $phone=htmlspecialchars($_POST['phone']);
   $user=htmlspecialchars($_POST['username']);

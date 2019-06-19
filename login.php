@@ -9,7 +9,7 @@ if(isset($_SESSION['id_std']) ){
 
 if(isset($_POST['login'])){
 $user=htmlspecialchars($_POST['user']);
-$pass=htmlspecialchars(md5($_POST['pass']));	
+$pass=htmlspecialchars(sha1($_POST['pass']));	
 $sql="SELECT * FROM login WHERE username='$user' and password='$pass'";
 
 // $sql = 'SELECT * FROM login WHERE username ="' + $user + '" AND password ="' + $pass + '"';
