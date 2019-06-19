@@ -2,29 +2,7 @@
 
 <?php 
 include "db.php";
-// open buffer  >> To clear servaer buffer  >> warning >> header already sent 
-// ob_start();
 
-// new if 
-
-/*
-  if($i<p): 
-  echo "hello";
-  endif;
-
-  tow word is vary important in db 
-
-  1- ORDER BY id
-
-  2- Lmite 3
-
-  method check var is empty or no
-
-  empty()
-
-   data table >> website libary nice table 
-
-*/
 session_start();
 if( !($_SESSION['id_std']) ){
    
